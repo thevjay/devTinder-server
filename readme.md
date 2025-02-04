@@ -1,0 +1,1 @@
+- validate the email means eamil containes google.@gmail.con or not checking purposes use the npm library it is npm i validator
