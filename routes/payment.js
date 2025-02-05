@@ -10,7 +10,6 @@ const User = require('../models/user');
 
 paymentRouter.post('/payment/create',userAuth,async(req,res)=>{
     try{
-
         const { membershipType } = req.body;
         const { firstName,lastName,emailId}=  req.user;
 
@@ -102,6 +101,8 @@ paymentRouter.post('/payment/webhook',async(req,res)=>{
     }
 })
 
+
+
 paymentRouter.get('/premium/verify',userAuth,async(req,res)=>{
     try{
 
@@ -116,4 +117,6 @@ paymentRouter.get('/premium/verify',userAuth,async(req,res)=>{
         console.error(error);
     }
 })
+
+
 module.exports = paymentRouter;
